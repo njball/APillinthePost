@@ -1,11 +1,69 @@
-<!DOCTYPE html>	<!--so browser knows to read as standard HTML5-->
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta http-equiv="Content-Type" content="text/html;charset=utf-8">	<!--//specifies the encoding of the page (characters)-->
-		<title>A pill in the post</title>
-	</head>
-	<body>
-		<!--Insert the jpg stored in the same folder-->
-		<img src=A-pill-in-the-post.jpg>
-	</body>
+<head>
+  <title>A pill in the post</title>
+  <link href="https://fonts.googleapis.com/css?family=Oswald:300,700|Varela+Round" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="bootstrap-override"> <!-- Use this to increase specificity when over-riding Bootstrap-->
+   
+   <div class="container">
+      <header>
+        <div class="row header-row">
+            <h1 class="col-sm-4"><a href="https:njball.github.io/Portfolio/">njball.github.io</a></h1>
+            <ul class="col-sm-8">
+              <li><a href=#>designs</a></li>
+              <li><a href=#>blog</a></li>
+              <li><a href=#>about</a></li>
+            </ul>
+          </div> <!--Close row div -->  
+      </header>
+    </div> <!-- Close container for header -->
+
+    <section class="jumbotron">
+      <div class="container">
+        <div class="row" id="vis-parent">
+          <img class="col-sm-11" src=img/A-pill-in-the-post.jpg>
+        </div>     
+      </div>
+  </section>
+
+  <div class="container date-square">
+      <div class="row">
+        <p class="col-sm-1 date-square-month">Feb</p>
+        <p class="col-sm-7">
+          A tree-map mocked up in Tableau, then recreated in Photoshop Elements to create the medicine tablet shapes.
+        </p>
+      </div>
+      <div class="row">
+        <p class="col-sm-1 date-square-year">2018</p>
+      </div>
+      <div class="row">
+        <p class="col-sm-1"></p>
+        <p class="col-sm-7 main-text">
+          This visualisation was created from a #MakeoverMonday dataset. The original visualisation can be found <a href="https://howmuch.net/articles/world-map-of-drug-exports-2016">here</a>.
+          <br><br>At first I envisaged a network diagram showing flows of exports from one country to another. My second idea was a slope chart comparing exporters with consumers.
+          Both plans changed when I realised the dataset didn't contain the level of detail required.
+          <br><br>Returning to the original visualisation, I realised that the aim was to give a sense of scale to the exports by country. As a parts to whole relationship, this inspired me to try a tree-map. After a little data prep (the data included categories for ship stores and bunkers!) I mocked it up in Tableau. Immediately I was struck with the idea that the squares looked like tablets.
+          <br><br>By now I'd missed the Makeover Monday deadline - but I couldn't get the idea out of my head.
+          I took a screenshot of the Tableau treemap and opened in Photoshop Elements, where I used it as a template to draw tablet shapes, using drop shadows and bevel styles to create the 3D effect.
+          <br><br>I changed the colour scheme to colours that reminded me of medicine, ensuring that all countries within a region were similar in colour. 
+          The predominance of European countries really stood out, providing the key insight which I emphasised with a colour-matched sub-heading.
+          <br><br>
+        </p>
+      </div>
+  </div>
+
+   <!--<div class="container">
+      <footer>
+        <div class="row footer-row">
+            <h1 class="col-sm-4">Thanks for reading</h1>
+          </div>  
+      </footer>
+    </div>  -->
+
+</body>
 </html>
